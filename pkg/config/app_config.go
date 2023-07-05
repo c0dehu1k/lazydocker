@@ -130,6 +130,10 @@ type GuiConfig struct {
 	// When true, increases vertical space used by focused side panel,
 	// creating an accordion effect
 	ExpandFocusedSidePanel bool `yaml:"expandFocusedSidePanel"`
+
+	// Layout of the lazydocker
+	//Values: Normal, Half, Full
+	ScreenMode string `yaml:"screenMode"`
 }
 
 // CommandTemplatesConfig determines what commands actually get called when we
@@ -362,6 +366,7 @@ func GetDefaultConfig() UserConfig {
 			SidePanelWidth:         0.3333,
 			ShowBottomLine:         true,
 			ExpandFocusedSidePanel: false,
+			ScreenMode:             "Normal",
 		},
 		ConfirmOnQuit: false,
 		Logs: LogsConfig{

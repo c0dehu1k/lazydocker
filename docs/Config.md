@@ -32,6 +32,8 @@ gui:
   sidePanelWidth: 0.333
   # Determines whether we show the bottom line (the one containing keybinding
 	# info and the status of the app).
+  # screenMode decides what to display on ui
+  screenMode: 'Normal' # one of 'Normal' | 'Half' | 'Full' 
   showBottomLine: true
   # When true, increases vertical space used by focused side panel,
   # creating an accordion effect
